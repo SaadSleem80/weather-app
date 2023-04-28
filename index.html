@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="./public/imgs/sun.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <form onsubmit="get_weather();">
+            <div class="logo">
+                <img src="./public/imgs/pin.png" alt="location">
+            </div>
+            <div class="form-group">
+                <input type="text" class="search" id="country" name="countrey" placeholder="Countery"
+                    onkeyup="searchCountry()">
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Search">
+            </div>
+        </form>
+        <div class="countery_select">
+            <ul>
+            </ul>
+        </div>
+        <div class="weather_details">
+            <div class="w-100">
+                <div class="logo">
+                    <img src="" alt="weather">
+                </div>
+                <div class="temp">
+                    <div>
+                        <h2></h2>
+
+                    </div>
+                    <div class="temp_logo">
+                        <h3>
+                            °C
+                        </h3>
+                    </div>
+                </div>
+                <div class="temp2">
+                    <h4></h4>
+                </div>
+                <div class="bottom_sec">
+                    <div class="humidity sec">
+                        <img src="./public/imgs/humidity.png" alt="">
+                        <div>
+                            <p class="content"></p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="speed sec">
+                        <img src="./public/imgs/wind.png" alt="">
+                        <div>
+                            <p class="content"></p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/script.js"></script>
+
+</html>

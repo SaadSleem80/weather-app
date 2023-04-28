@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #08174d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main form {
+    width: 400px;
+    height: 70px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+}
+
+.main form .logo {
+    margin-left: 10px;
+}
+
+.main form .search {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    width: 280px;
+    font-weight: bold;
+}
+
+
+
+.main form .btn {
+    margin-right: 10px;
+}
+
+.main .countery_select {
+    width: 400px;
+    background-color: white;
+    display: none;
+    position: relative;
+    top: -10px;
+    border-radius: 6px;
+}
+
+.main .countery_select ul {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.main .countery_select ul li {
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px 10px 0;
+}
+
+.main .countery_select ul li:hover {
+    background-color: #eee;
+    transition: 0.3;
+}
+
+.main .weather_details {
+    background-color: #fff;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -10px;
+    border-radius: 6px;
+    padding-top: 30px;
+    display: none;
+}
+
+@media (max-width:768px) {
+    .main form {
+        width: 300px;
+    }
+
+    .main form .search {
+        font-size: 20px;
+        width: 200px;
+    }
+    .main .countery_select {
+        width: 300px;
+    }
+    .main .weather_details {
+        width: 300px;
+    }
+    .main form .btn {
+        font-size: 14px;
+    }
+    
+}
+
+.main .weather_details .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .weather_details .logo img {
+    width: 200px;
+}
+
+.main .weather_details .temp {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .weather_details .temp h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.main .weather_details .temp2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main .weather_details .temp2 h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main .weather_details .temp .temp_logo {
+    margin-bottom: 40px;
+}
+
+
+.main .weather_details .bottom_sec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.main .weather_details .bottom_sec .sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.main .weather_details .bottom_sec .sec p {
+    margin: 0;
+}
